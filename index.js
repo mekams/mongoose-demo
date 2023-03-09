@@ -31,6 +31,7 @@ const article = await Blog.create({
   author: user._id,
   content: 'This is the best post ever',
   tags: ['featured', 'announcement'],
+  comments:[{user:user._id,content:"kams", votes:30}]
 });
 
 console.log(article);
